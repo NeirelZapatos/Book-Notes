@@ -311,7 +311,6 @@ app.post("/register", async (req, res) => {
         );
         if (checkResult.rows.length > 0) {
             res.render(__dirname + "/views/sign-up.ejs", {
-                books: bookInfo,
                 loggedIn: false,
                 erroeMessage: "That username is already taken"
             }); 
